@@ -22,8 +22,8 @@ return new class extends Migration
                 ->cascadeOnUpdate()
                 ->nullOnDelete();
             $table->foreignId('status_id')
-            ->bullable()
-            ->contstrained()
+            ->nullable()
+            ->constrained()
             ->cascadeOnUpdate()
             ->nullOnDelete();
         });
